@@ -2,7 +2,7 @@
 export default function Footer(){
     return(
         <>
-        <p>Footer</p>
+        <p className=" text-center dark:text-white py-10">© All right reserved by kishore</p>
         </>
     )
 }

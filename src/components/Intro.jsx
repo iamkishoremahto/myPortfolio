@@ -8,7 +8,7 @@ import { PiDownloadLight } from "react-icons/pi";
 export default function Intro(){
     return(
         <>
-        <div className=" my-[250px] rounded-3xl dark:text-white dark:bg-black bg-white p-4 min-w-[350px]  max-w-[350px] gap-9 lg:min-w-[400px] min-h-[720px] flex flex-col  items-center relative">
+        <div className="  rounded-3xl  dark:text-white dark:bg-black bg-white p-4 min-w-[350px]  max-w-[350px] gap-9 lg:min-w-[400px] min-h-[720px] flex flex-col  items-center  xl:sticky xl:top-[180px]">
             <div className=" absolute top-[-150px] ">
                 <img src="/images/profile.webp" alt="profile" className="profilePic rounded-3xl" />
             </div>
