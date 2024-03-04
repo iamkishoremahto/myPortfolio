@@ -5,6 +5,12 @@ import Skill from "./sub_components/Skill";
 import { GiSkills } from "react-icons/gi";
 import SoftSkill from "./sub_components/SoftSkill";
 import { SoftSkillData } from "../assets/SoftSkillData";
+import { PiGraduationCapFill } from "react-icons/pi";
+import Education from "./sub_components/Education";
+import { EducationData } from "../assets/EducationData";
+import { LiaCertificateSolid } from "react-icons/lia";
+import Certificate from "./sub_components/Certificate";
+import { CertificateData } from "../assets/CertificateData";
 
 export default function Resume() {
   return (
@@ -43,18 +49,55 @@ export default function Resume() {
 
               <div className="softSkills flex flex-wrap items-center justify-center gap-5">
 
-               {
-                SoftSkillData.map((item) => {
-                  return <SoftSkill key = {item.key} data = {item} />
-                })
-               }
+                {
+                  SoftSkillData.map((item) => {
+                    return <SoftSkill key={item.key} data={item} />
+                  })
+                }
 
               </div>
             </div>
 
+          </div>
 
+          <div className="education_certif_wrapper flex items-start gap-5 flex-col xl:flex-row justify-between  w-full">
+            <div className="education  flex flex-col flex-1 p-3 gap-5">
+              <div className="heading flex items-center gap-5">
+                <PiGraduationCapFill className="text-4xl  text-pink-400" />
+                <h1 className=" text-2xl font-bold">Education</h1>
+              </div>
+
+              {
+                EducationData.map((item) => {
+                  return <Education key={item.id} data={item} />
+                })
+              }
+
+
+
+            </div>
+
+            <div className="certification  w-full flex-1">
+              <div className="certificateWrapper flex  flex-col gap-5 p-3">
+                <div className="heading flex items-center gap-5">
+                  <LiaCertificateSolid className="text-4xl  text-pink-400" />
+                  <h1 className=" text-2xl font-bold">Certification</h1>
+                </div>
+
+                {
+                  CertificateData.map((item) => {
+                    return <Certificate key = {item.id} data= {item} />
+                  })
+                }
+                
+
+
+              </div>
+            </div>
 
           </div>
+
+
         </div>
       </div>
     </>
