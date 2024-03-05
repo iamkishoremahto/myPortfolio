@@ -4,6 +4,7 @@ import { SiFrontendmentor } from "react-icons/si";
 import { LiaEnvelopeOpenTextSolid } from "react-icons/lia";
 import { HiOutlineDevicePhoneMobile } from "react-icons/hi2";
 import { PiDownloadLight } from "react-icons/pi";
+import { IntroData } from "../assets/IntroData";
 
 export default function Intro(){
     return(
@@ -14,10 +15,10 @@ export default function Intro(){
             </div>
             <div className="personalInfo pt-[100px] flex flex-col justify-center items-center gap-5">
                 <div className="name">
-                    <p className="text-2xl lg:text-3xl font-bold">Kishore Kumar Mahto</p>
+                    <p className="text-2xl lg:text-3xl font-bold">{IntroData.name}</p>
                 </div>
                 <div className="designation flex items-center justify-center">
-                    <p className=" bg-gray-100 h-8 w-[180px] mt-0 flex items-center justify-center rounded-md font-medium dark:bg-gray-700 dark:text-gray-300" >Software Engineer</p>
+                    <p className=" bg-gray-100 h-8 w-[180px] mt-0 flex items-center justify-center rounded-md font-medium dark:bg-gray-700 dark:text-gray-300" >{IntroData.designation}</p>
                 </div>
                 <div className="socialProfiles  flex items-center justify-evenly  gap-3">
                     <a href="#" className="social shadow-2xl text-blue-700 hover:text-white">
@@ -43,7 +44,7 @@ export default function Intro(){
                     </div>
                     <div className="info">
                         <p className= " text-gray-500 text-sm">Phone</p>
-                        <a href="tel:+918340317197">+91 8340317197</a>
+                        <a href="tel:+918340317197">{IntroData.mobile}</a>
                     </div>
                 </div>
 
@@ -53,7 +54,7 @@ export default function Intro(){
                     </div>
                     <div className="info">
                         <p className= " text-gray-500 text-sm">Email</p>
-                        <a href="mailto:iamkishoremahto@gmail.com">iamkishoremahto@gmail.com</a>
+                        <a href="mailto:iamkishoremahto@gmail.com">{IntroData.email}</a>
                     </div>
                 </div>
 
@@ -63,7 +64,7 @@ export default function Intro(){
                     </div>
                     <div className="info">
                         <p className= " text-gray-500 text-sm">Location</p>
-                        <p>Bangalore, Karnataka</p>
+                        <p>{IntroData.location}</p>
                     </div>
                 </div>
 
@@ -73,13 +74,13 @@ export default function Intro(){
                     </div>
                     <div className="info">
                         <p className= " text-gray-500 text-sm">Date Of Birth</p>
-                        <p>Sep, 15, 2000</p>
+                        <p>{IntroData.dob}</p>
                     </div>
                 </div>
             </div>
             <div className="cv">
             
-                <a href="#" className="flex text-lg items-center justify-center min-w-[250px] dark:hover:text-white dark:hover:bg-black gap-2 bg-blue-500 text-white font-bold hover:bg-white hover:border-[1px] border-[1px] border-blue-500  hover:border-blue-500 hover:text-blue-500 transition-all ease-in-out duration-150 py-4 rounded-lg"><span><PiDownloadLight /></span>Download CV</a>
+                <a href={IntroData.resumeLink} className="flex text-lg items-center justify-center min-w-[250px] dark:hover:text-white dark:hover:bg-black gap-2 bg-blue-500 text-white font-bold hover:bg-white hover:border-[1px] border-[1px] border-blue-500  hover:border-blue-500 hover:text-blue-500 transition-all ease-in-out duration-150 py-4 rounded-lg"><span><PiDownloadLight /></span>Download CV</a>
             </div>
         </div>
         </>
