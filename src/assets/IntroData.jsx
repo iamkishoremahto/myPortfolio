@@ -5,5 +5,6 @@ export const IntroData = {
     email:"iamkishoremahto@gmail.com",
     location:"Bangalore, Karnataka",
     dob:"Sep, 15, 2000",
-    resumeLink:"#"
+    resumeLink:"https://drive.google.com/file/d/1cTVxcnR2e-0-e0M0SJ8yDcAHLa9x0UXY/view?usp=drivesdk",
+    profilePic:"/images/profile.webp"
 }

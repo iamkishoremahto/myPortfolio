@@ -44,6 +44,8 @@ export default function Contact() {
     console.log(formDataObjects)
     const sentStatus = true;
 
+  
+
     if (sentStatus) {
       toast.success('Email Sent Successfully....', {
         position: "top-right",
